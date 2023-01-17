@@ -5,13 +5,8 @@ const app = Fastify()
 const prisma = new PrismaClient()
 
 app.get('/hello', async () => {
-  const habits = await prisma.habit.findMany({
-    where:{
-      title: {
-        startsWith: 'Beber'
-      }
-    }
-  })
+  const habits = await prisma.habit.findMany()
+
   return habits
 })
 
