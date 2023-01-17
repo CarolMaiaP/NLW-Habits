@@ -1,0 +1,20 @@
+{
+  "name": "nlw-habits",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarolMaiaP/NLW-Habits.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CarolMaiaP/NLW-Habits/issues"
+  },
+  "homepage": "https://github.com/CarolMaiaP/NLW-Habits#readme"
+}
