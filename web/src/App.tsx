@@ -4,10 +4,10 @@ import { Habit } from "./components/Habit"
 function App() {
   return (
     <>
-      <Habit />
-      <Habit />
-      <Habit />
-      <Habit />
+      <Habit completed={4} />
+      <Habit completed={10} />
+      <Habit completed={20} />
+      <Habit completed={2} />
     </>
   )
 }
