@@ -1,3 +1,5 @@
+import './Habit.css'
+
 interface HabitProps{
   completed: number
 }
@@ -5,7 +7,7 @@ interface HabitProps{
 export function Habit(props:HabitProps){
   return(
     <div>
-      <p>{props.completed}</p>
+      <p className="habits">{props.completed}</p>
     </div>
   )
 }

@@ -1,0 +1,10 @@
+.habits{
+  width: 20px;
+  height: 20px;
+  padding: 1rem;
+  background: purple;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 700;
+  font-family: sans-serif;
+}
