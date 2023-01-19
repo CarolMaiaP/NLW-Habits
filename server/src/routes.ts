@@ -1,5 +1,5 @@
-import { FastifyInstance } from "fastify"
 import { prisma } from "./lib/prisma"
+import { FastifyInstance } from "fastify"
 import {z} from 'zod'
 
 export async function appRoutes(app: FastifyInstance){
@@ -12,6 +12,20 @@ export async function appRoutes(app: FastifyInstance){
     })
 
     const { title, weekDays } = createHabitBody.parse(request.body)
+  
+    await prisma.habit.create({
+      data: {
+        title,
+        created_at: new Date(),
+        weekDays: {
+          create: weekDays.map(weekDay => {
+            return {
+              week_day: weekDay,
+            }
+          })
+        }
+      }
+    })
   })
 }
 
